@@ -13,10 +13,7 @@ btn.addEventListener("click", function () {
   )
     .then((response) => response.json())
     .then((data) => {
-      // let city = data["name"];
-      // let weather = data["weather"]["main"];
-      // let humidity = data["main"]["humidity"];
-      // let tempr = data["main"]["temp"];
+
       var tempC = data.main.temp - 273.15;
       tempC = tempC.toFixed(2);
 
@@ -30,6 +27,3 @@ btn.addEventListener("click", function () {
     });
 });
 
-// "https://api.openweathermap.org/data/2.5/weather?q=" +
-//       inputValue.value +
-//       "&appid=ff092519bc84a7badf9349529e5ce1d5"
